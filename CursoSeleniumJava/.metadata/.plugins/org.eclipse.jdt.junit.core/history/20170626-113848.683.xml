@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ElementosTest" project="WebElementosTest" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="br.com.automation.ElementosTest" time="49.904">
+    <testcase name="testRadioButton" classname="br.com.automation.ElementosTest" time="38.836"/>
+    <testcase name="testEscreverNome" classname="br.com.automation.ElementosTest" time="11.068"/>
+  </testsuite>
+</testrun>
