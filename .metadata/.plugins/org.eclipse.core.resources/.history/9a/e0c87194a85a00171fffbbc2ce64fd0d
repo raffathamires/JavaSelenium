@@ -14,7 +14,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-//ordernar a execucao dos testes
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 
 public class CalculadoraTest {
@@ -50,7 +49,7 @@ public class CalculadoraTest {
 	}
 
 	@Test
-	public void SumTwoValues() throws InterruptedException {
+	public void BSumTwoValues() throws InterruptedException {
 		input1 = 4;
 		input2 = 8;
 		int sum = input1 + input2;
@@ -68,7 +67,7 @@ public class CalculadoraTest {
 	}
 	
 	@Test
-	public void SubTwoValues() throws InterruptedException {
+	public void ASubTwoValues() throws InterruptedException {
 		input1 = 254;
 		input2 = 140;
 		int sub = input1 - input2;
@@ -86,7 +85,7 @@ public class CalculadoraTest {
 	}
 	
 	@Test
-	public void MultTwoValues() throws InterruptedException {
+	public void CMultTwoValues() throws InterruptedException {
 		input1 = 12;
 		input2 = 4;
 		int mult = input1 * input2;
@@ -104,7 +103,7 @@ public class CalculadoraTest {
 	}
 	
 	@Test
-	public void DivTwoValues() throws InterruptedException {
+	public void DDivTwoValues() throws InterruptedException {
 		double input1 = 160;
 		double input2 = 7;
 		double div = 0;
