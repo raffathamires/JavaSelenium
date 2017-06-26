@@ -58,32 +58,17 @@ public class MultipleWindows {
 		Thread.sleep(3000);
 	}
 	
-	
-	private void assertCalculadora(){
-		assertEquals("Desafio Automação Cálculos", driver.getTitle());
-	}
-	
-	private void assertTable(){
-		assertEquals("Trabalhando com tables", driver.getTitle());
-	}
-	
 	@Test
 	public void testNavigation() throws InterruptedException{
 		assertHomeIndex();
 		driver.navigate().to("http://treinoautomacao.hol.es/desafiosoma.html");
-		assertCalculadora();
-		Thread.sleep(3000);
+		assertHomeIndex();
 		driver.navigate().back();
 		assertHomeIndex();
-		Thread.sleep(3000);
 		driver.navigate().to("http://treinoautomacao.hol.es/localizandovalorestable.html");
 		driver.navigate().back();
 		driver.navigate().forward();
-		assertTable();
-		Thread.sleep(3000);
-		driver.navigate().back();
 		assertHomeIndex();
-		Thread.sleep(3000);
 		
 	}
 
