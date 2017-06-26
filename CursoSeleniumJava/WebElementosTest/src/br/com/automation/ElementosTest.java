@@ -72,9 +72,16 @@ public class ElementosTest {
 	}
 	
 	@Test
-	public void testDropDownList(){
+	public void testDropDownList() throws InterruptedException{
 		WebElement dropdownlist = driver.findElement(By.name("dropdownlist"));
 		Select listboxelements = new Select(dropdownlist);
+		listboxelements.selectByIndex(6);
+		listboxelements.selectByVisibleText("Item 8");
+		listboxelements.selectByVisibleText("Item 7");
+			System.out.println("Lista Simples: " + 
+					listboxelements.getFirstSelectedOption().getText());
+		assertEquals("Item 7", listboxelements.getFirstSelectedOption().getText());
+		Thread.sleep(3000);
 	}
 
 }
