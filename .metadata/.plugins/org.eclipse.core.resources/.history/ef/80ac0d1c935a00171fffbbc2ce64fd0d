@@ -90,14 +90,13 @@ public class ElementosTest {
 	public void testDropDownMultipleList() throws InterruptedException{
 		WebElement multiselectdropdown = driver.findElement(By.name("multiselectdropdown"));
 		Select listboxelements = new Select(multiselectdropdown);
+		List<WebElement> elementsCheck = listboxelements.getAllSelectedOptions();
 		
 		if(listboxelements.isMultiple()) {
 		listboxelements.selectByVisibleText("Item 5");
 		listboxelements.selectByVisibleText("Item 8");
 		listboxelements.selectByVisibleText("Item 9");
 		}
-		
-		List<WebElement> elementsCheck = listboxelements.getAllSelectedOptions();
 		
 		for(WebElement e : elementsCheck){
 			System.out.println("Lista selecionada: " + e.getText());
