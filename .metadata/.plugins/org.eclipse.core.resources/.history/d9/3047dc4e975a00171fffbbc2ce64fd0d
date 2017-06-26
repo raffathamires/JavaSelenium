@@ -130,7 +130,7 @@ public class ElementosTest {
 	}
 	
 	@Test
-	public void testAlert() throws InterruptedException {
+	public void testAlert() {
 		//Alert
 		WebElement buttonAlert = driver.findElement(By.name("alertbtn"));
 		buttonAlert.click();
@@ -140,9 +140,9 @@ public class ElementosTest {
 		System.out.println(myAlert.getText());
 		//faz a validacao do texto esperado com a mensagem exibida no alert
 		assertEquals("Eu sou um alerta!", myAlert.getText());
-		Thread.sleep(3000);
 		myAlert.accept();
-				
+		Thread.sleep(3000);
+		
 	}
 
 }

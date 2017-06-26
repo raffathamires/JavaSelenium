@@ -8,7 +8,6 @@ import java.util.concurrent.TimeUnit;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -127,22 +126,6 @@ public class ElementosTest {
 		assertEquals("Testes", driver.findElement(By.id("q")).getAttribute("value"));
 		Thread.sleep(3000);
 		System.out.println("Frame 2 passed");
-	}
-	
-	@Test
-	public void testAlert() throws InterruptedException {
-		//Alert
-		WebElement buttonAlert = driver.findElement(By.name("alertbtn"));
-		buttonAlert.click();
-		//Cria alerta
-		Alert myAlert = driver.switchTo().alert();
-		//printa a mensagem do alert no console
-		System.out.println(myAlert.getText());
-		//faz a validacao do texto esperado com a mensagem exibida no alert
-		assertEquals("Eu sou um alerta!", myAlert.getText());
-		Thread.sleep(3000);
-		myAlert.accept();
-				
 	}
 
 }
