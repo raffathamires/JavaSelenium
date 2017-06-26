@@ -12,6 +12,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class ElementosTest {
 	
@@ -54,5 +55,27 @@ public class ElementosTest {
 			}
 		}
 	}
+	
+	@Test
+	public void testAcessarCheckBox() throws InterruptedException{
+		List<WebElement> elementsCheck = driver.findElements(By.name("chkbox"));
+		for(WebElement e : elementsCheck){
+			System.out.println(e.getAttribute("value").toString());
+			
+			if(!e.getAttribute("value").equals("Check Box 3 selecionado")){
+				e.click();
+				assertTrue(e.isSelected());
+				Thread.sleep(3000);
+				break;
+			}
+		}
+	}
+	
+	@Test
+	public void testDropDownList(){
+		WebElement dropdownlist = driver.findElement(By.name("dropdownlist"));
+		Select listboxelements = new Select(dropdownlist);
+	}
 
 }
+
