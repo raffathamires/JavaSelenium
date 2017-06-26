@@ -101,11 +101,11 @@ public class CalculadoraTest {
 	@Test
 	public void DivTwoValues() throws InterruptedException {
 		double input1 = 160;
-		double input2 = 7;
+		double input2 = 0;
 		double div = 0;
 		number1.sendKeys(Double.toString(input1));
 		number2.sendKeys(Double.toString(input2));
-		dividir.click();
+		System.out.println("Clickou");
 		if(input2 == 0){
 			System.out.println("Não é possível realizar divisão por 0");
 			assertEquals("Infinity", total.getAttribute("value"));

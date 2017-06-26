@@ -103,17 +103,20 @@ public class CalculadoraTest {
 		double input1 = 160;
 		double input2 = 7;
 		double div = 0;
-		number1.sendKeys(Double.toString(input1));
-		number2.sendKeys(Double.toString(input2));
-		dividir.click();
-		if(input2 == 0){
+		if(input2 == 0)
 			System.out.println("Não é possível realizar divisão por 0");
-			assertEquals("Infinity", total.getAttribute("value"));
-		}
 		else{
 			div = input1 / input2;
-			assertEquals(Double.toString(div), total.getAttribute("value"));
+			System.out.println(div);
 		}
+		number1.sendKeys(Double.toString(input1));
+		System.out.println("Inseriu primeiro dado");
+		number2.sendKeys(Double.toString(input2));
+		System.out.println("Inseriu segundo dado");
+		dividir.click();
+		System.out.println("Clickou");
+		assertEquals(Double.toString(div), total.getAttribute("value"));
+		
 		Thread.sleep(3000);
 	}
 	

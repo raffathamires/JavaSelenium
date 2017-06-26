@@ -101,7 +101,7 @@ public class CalculadoraTest {
 	@Test
 	public void DivTwoValues() throws InterruptedException {
 		double input1 = 160;
-		double input2 = 7;
+		double input2 = 4;
 		double div = 0;
 		number1.sendKeys(Double.toString(input1));
 		number2.sendKeys(Double.toString(input2));
