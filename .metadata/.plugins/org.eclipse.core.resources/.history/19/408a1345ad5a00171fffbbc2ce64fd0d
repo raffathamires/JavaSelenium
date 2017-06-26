@@ -50,12 +50,10 @@ public class DragAndDrop {
 		assertDrag();
 		Destino = driver.findElement(By.id("droppable"));
 		assertDrop();
-		File beforeScrnShot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(beforeScrnShot, new File("C:\\Users\\sala01\\Documents\\JavaSelenium\\teste1.png"));
+		File scrnShot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(scrnShot, new File("C:\\Users\\sala01\\Documents\\JavaSelenium\\teste1.png"));
 		new Actions(driver).dragAndDrop(Origem, Destino).perform();
 		assertDropped();
-		File AfterScrnShot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(AfterScrnShot, new File("C:\\Users\\sala01\\Documents\\JavaSelenium\\teste2.png"));
 		Thread.sleep(3000);
 	}
 

@@ -55,7 +55,7 @@ public class DragAndDrop {
 		new Actions(driver).dragAndDrop(Origem, Destino).perform();
 		assertDropped();
 		File AfterScrnShot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(AfterScrnShot, new File("C:\\Users\\sala01\\Documents\\JavaSelenium\\teste2.png"));
+		FileUtils.copyFile(AfterScrnShot, new File("C:\\Users\\sala01\\Documents\\JavaSelenium\\teste1.png"));
 		Thread.sleep(3000);
 	}
 

@@ -2,8 +2,6 @@ package br.com.automation;
 
 import static org.junit.Assert.*;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
@@ -14,8 +12,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.*;
 
 public class DragAndDrop {
 	private WebDriver driver;
@@ -45,17 +41,13 @@ public class DragAndDrop {
 	}
 
 	@Test
-	public void test() throws InterruptedException, IOException {
+	public void test() throws InterruptedException {
 		Origem = driver.findElement(By.id("draggable"));
 		assertDrag();
 		Destino = driver.findElement(By.id("droppable"));
 		assertDrop();
-		File beforeScrnShot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(beforeScrnShot, new File("C:\\Users\\sala01\\Documents\\JavaSelenium\\teste1.png"));
 		new Actions(driver).dragAndDrop(Origem, Destino).perform();
 		assertDropped();
-		File AfterScrnShot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(AfterScrnShot, new File("C:\\Users\\sala01\\Documents\\JavaSelenium\\teste2.png"));
 		Thread.sleep(3000);
 	}
 
