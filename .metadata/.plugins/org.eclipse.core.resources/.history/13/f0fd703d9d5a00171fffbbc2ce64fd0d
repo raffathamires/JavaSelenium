@@ -83,7 +83,7 @@ public class CalculadoraTest {
 	@Test
 	public void MultTwoValues() throws InterruptedException {
 		input1 = 12;
-		input2 = 4;
+		input2 = 1;
 		int mult = input1 * input2;
 		System.out.println(mult);
 		

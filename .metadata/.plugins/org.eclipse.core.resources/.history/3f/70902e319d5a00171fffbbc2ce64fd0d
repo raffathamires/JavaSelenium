@@ -22,7 +22,6 @@ public class CalculadoraTest {
 	WebElement subtrair;
 	WebElement multiplicar;
 	WebElement dividir;
-	private int input1, input2;
 
 	@Before
 	public void setUp() throws Exception {
@@ -46,8 +45,8 @@ public class CalculadoraTest {
 
 	@Test
 	public void SumTwoValues() throws InterruptedException {
-		input1 = 4;
-		input2 = 8;
+		int input1 = 4;
+		int input2 = 8;
 		int sum = input1 + input2;
 		System.out.println(sum);
 		
@@ -64,8 +63,8 @@ public class CalculadoraTest {
 	
 	@Test
 	public void SubTwoValues() throws InterruptedException {
-		input1 = 254;
-		input2 = 140;
+		int input1 = 254;
+		int input2 = 140;
 		int sub = input1 - input2;
 		System.out.println(sub);
 		
@@ -79,25 +78,5 @@ public class CalculadoraTest {
 		
 		Thread.sleep(3000);
 	}
-	
-	@Test
-	public void MultTwoValues() throws InterruptedException {
-		input1 = 12;
-		input2 = 4;
-		int mult = input1 * input2;
-		System.out.println(mult);
-		
-		number1.sendKeys(Integer.toString(input1));
-		System.out.println("Inseriu primeiro dado");
-		number2.sendKeys(Integer.toString(input2));
-		System.out.println("Inseriu segundo dado");
-		multiplicar.click();
-		System.out.println("Clickou");
-		assertEquals(Integer.toString(mult), total.getAttribute("value"));
-		
-		Thread.sleep(3000);
-	}
-	
-	
 
 }
