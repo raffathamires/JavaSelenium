@@ -111,22 +111,6 @@ public class ElementosTest {
 		Thread.sleep(3000);
 		
 	}
-	@Test
-	public void testiFrame() throws InterruptedException{
-		driver.switchTo().frame("iframe_b");
-		WebElement txtSearch = driver.findElement(By.id("term"));
-		txtSearch.sendKeys("Testes");
-		assertEquals("Testes", driver.findElement(By.id("term")).getAttribute("value"));
-		Thread.sleep(3000);
-		System.out.println("Frame 1 passed");
-		driver.switchTo().defaultContent();
-		driver.switchTo().frame("iframe_d");
-		WebElement txtSearch2 = driver.findElement(By.id("q"));
-		txtSearch2.sendKeys("Testes");
-		assertEquals("Testes", driver.findElement(By.id("q")).getAttribute("value"));
-		Thread.sleep(3000);
-		System.out.println("Frame 2 passed");
-	}
 
 }
 
