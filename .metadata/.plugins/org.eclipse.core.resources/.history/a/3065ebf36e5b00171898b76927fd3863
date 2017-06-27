@@ -1,0 +1,40 @@
+package br.com.testes;
+
+import org.testng.annotations.Test;
+
+import br.com.util.SpreadsheetData;
+
+import org.testng.annotations.BeforeMethod;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.DataProvider;
+
+public class TestNGDataDriven {
+	private WebDriver driver;
+	
+  @Test(dataProvider = "createData")
+  public void f(Integer n, String s) {
+  }
+  
+  @BeforeMethod
+  public void beforeMethod() {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sala01\\Documents\\JavaSelenium\\CursoSeleniumJava\\Drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.get("https://m.extra.com.br/#/");
+  }
+
+  @AfterMethod
+  public void afterMethod() {
+  }
+
+  @DataProvider(name = "dbPaises")
+  public Object[][] createData() {
+	Object[][] testData = SpreadsheetData.readExcelData("Paises", "db/paises.xls", "Dados");
+    return testData;
+  }
+}

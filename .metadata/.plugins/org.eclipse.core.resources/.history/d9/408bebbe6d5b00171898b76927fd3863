@@ -1,0 +1,30 @@
+package br.com.testes;
+
+import org.testng.annotations.Test;
+
+import br.com.util.SpreadsheetData;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.DataProvider;
+
+public class TestNGDataDriven {
+	
+  @Test(dataProvider = "dp")
+  public void f(Integer n, String s) {
+  }
+  
+  @BeforeMethod
+  public void beforeMethod() {
+  }
+
+  @AfterMethod
+  public void afterMethod() {
+  }
+
+  @DataProvider(name = "dbPaises")
+  public Object[][] createData() {
+	Object[][] testData = SpreadsheetData.readExcelData("Paises", "db/paises.xls", "Dados");
+    return testData;
+  }
+}

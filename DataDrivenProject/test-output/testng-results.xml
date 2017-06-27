@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="63338" started-at="2017-06-27T19:53:37Z" finished-at="2017-06-27T19:54:40Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="63338" started-at="2017-06-27T19:53:37Z" finished-at="2017-06-27T19:54:40Z">
+      <class name="br.com.testes.TestNGDataDriven">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="beforeMethod" is-config="true" duration-ms="1771" started-at="2017-06-27T16:53:37Z" finished-at="2017-06-27T16:53:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testDaraDrivenExcel(java.lang.String)[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="testDaraDrivenExcel" duration-ms="8402" started-at="2017-06-27T16:53:39Z" data-provider="dbPaises" finished-at="2017-06-27T16:53:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Argentina]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDaraDrivenExcel -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="afterMethod" is-config="true" duration-ms="787" started-at="2017-06-27T16:53:47Z" finished-at="2017-06-27T16:53:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="beforeMethod" is-config="true" duration-ms="1171" started-at="2017-06-27T16:53:48Z" finished-at="2017-06-27T16:53:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testDaraDrivenExcel(java.lang.String)[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="testDaraDrivenExcel" duration-ms="8821" started-at="2017-06-27T16:53:49Z" data-provider="dbPaises" finished-at="2017-06-27T16:53:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Brazil]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDaraDrivenExcel -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="afterMethod" is-config="true" duration-ms="656" started-at="2017-06-27T16:53:58Z" finished-at="2017-06-27T16:53:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="beforeMethod" is-config="true" duration-ms="1226" started-at="2017-06-27T16:53:58Z" finished-at="2017-06-27T16:54:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testDaraDrivenExcel(java.lang.String)[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="testDaraDrivenExcel" duration-ms="5716" started-at="2017-06-27T16:54:00Z" data-provider="dbPaises" finished-at="2017-06-27T16:54:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Uruguay]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDaraDrivenExcel -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="afterMethod" is-config="true" duration-ms="644" started-at="2017-06-27T16:54:05Z" finished-at="2017-06-27T16:54:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="beforeMethod" is-config="true" duration-ms="1135" started-at="2017-06-27T16:54:06Z" finished-at="2017-06-27T16:54:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testDaraDrivenExcel(java.lang.String)[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="testDaraDrivenExcel" duration-ms="6853" started-at="2017-06-27T16:54:07Z" data-provider="dbPaises" finished-at="2017-06-27T16:54:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sri Lanka]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDaraDrivenExcel -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="afterMethod" is-config="true" duration-ms="643" started-at="2017-06-27T16:54:14Z" finished-at="2017-06-27T16:54:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="beforeMethod" is-config="true" duration-ms="1176" started-at="2017-06-27T16:54:15Z" finished-at="2017-06-27T16:54:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testDaraDrivenExcel(java.lang.String)[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="testDaraDrivenExcel" duration-ms="6669" started-at="2017-06-27T16:54:16Z" data-provider="dbPaises" finished-at="2017-06-27T16:54:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[England]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDaraDrivenExcel -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="afterMethod" is-config="true" duration-ms="654" started-at="2017-06-27T16:54:23Z" finished-at="2017-06-27T16:54:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="beforeMethod" is-config="true" duration-ms="1159" started-at="2017-06-27T16:54:23Z" finished-at="2017-06-27T16:54:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testDaraDrivenExcel(java.lang.String)[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="testDaraDrivenExcel" duration-ms="5283" started-at="2017-06-27T16:54:24Z" data-provider="dbPaises" finished-at="2017-06-27T16:54:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Paraguay]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDaraDrivenExcel -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="afterMethod" is-config="true" duration-ms="629" started-at="2017-06-27T16:54:30Z" finished-at="2017-06-27T16:54:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="beforeMethod" is-config="true" duration-ms="1170" started-at="2017-06-27T16:54:30Z" finished-at="2017-06-27T16:54:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testDaraDrivenExcel(java.lang.String)[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="testDaraDrivenExcel" duration-ms="7940" started-at="2017-06-27T16:54:31Z" data-provider="dbPaises" finished-at="2017-06-27T16:54:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDaraDrivenExcel -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:br.com.testes.TestNGDataDriven@14acaea5]" name="afterMethod" is-config="true" duration-ms="659" started-at="2017-06-27T16:54:39Z" finished-at="2017-06-27T16:54:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- br.com.testes.TestNGDataDriven -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
