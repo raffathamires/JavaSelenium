@@ -1,0 +1,18 @@
+package br.com.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class ProdutoTeste {
+
+	@Test
+	public void testVendaComSucesso() {
+		System.out.println("testVendaComSucesso");
+	}
+	
+	@Test
+	public void testVendaSemSucesso(){
+		System.out.println("testVendaSemSucesso");
+	}
+}

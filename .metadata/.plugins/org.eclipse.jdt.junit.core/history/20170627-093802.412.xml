@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="GeradorCPFTest" project="WebElementosTest" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="br.com.automation.GeradorCPFTest" time="8.429">
-    <testcase name="testGeradorCPF" classname="br.com.automation.GeradorCPFTest" time="8.429"/>
-  </testsuite>
-</testrun>

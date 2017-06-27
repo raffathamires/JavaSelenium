@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AllTests" project="JUnitCategories" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="br.com.suites.AllTests" time="0.0">
+    <testsuite name="br.com.tests.LoginTeste" time="0.0">
+      <testcase name="testLoginSenhaInvalida" classname="br.com.tests.LoginTeste" time="0.0"/>
+      <testcase name="testLoginUsuaropInvalido" classname="br.com.tests.LoginTeste" time="0.0"/>
+      <testcase name="testLoginValido" classname="br.com.tests.LoginTeste" time="0.0"/>
+    </testsuite>
+    <testsuite name="br.com.tests.ProdutoTeste" time="0.0">
+      <testcase name="testVendaComSucesso" classname="br.com.tests.ProdutoTeste" time="0.0"/>
+      <testcase name="testVendaSemSucesso" classname="br.com.tests.ProdutoTeste" time="0.0"/>
+    </testsuite>
+  </testsuite>
+</testrun>
