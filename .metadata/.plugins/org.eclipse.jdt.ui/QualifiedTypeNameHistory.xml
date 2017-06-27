@@ -2,4 +2,15 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
 <fullyQualifiedTypeName name="com.thoughtworks.selenium.webdriven.commands.GetAttribute"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By.ById"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.Alert"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By.ByLinkText"/>
+<fullyQualifiedTypeName name="com.thoughtworks.selenium.webdriven.commands.GetTitle"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.junit.FixMethodOrder"/>
+<fullyQualifiedTypeName name="org.junit.runners.MethodSorters"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
+<fullyQualifiedTypeName name="java.io.File"/>
 </qualifiedTypeNameHistroy>

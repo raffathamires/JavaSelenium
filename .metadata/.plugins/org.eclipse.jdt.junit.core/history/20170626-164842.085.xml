@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="CalculadoraTest" project="WebElementosTest" tests="4" started="4" failures="0" errors="0" ignored="0">
-  <testsuite name="br.com.automation.CalculadoraTest" time="30.362">
-    <testcase name="ASubTwoValues" classname="br.com.automation.CalculadoraTest" time="8.239"/>
-    <testcase name="BSumTwoValues" classname="br.com.automation.CalculadoraTest" time="7.443"/>
-    <testcase name="CMultTwoValues" classname="br.com.automation.CalculadoraTest" time="7.18"/>
-    <testcase name="DDivTwoValues" classname="br.com.automation.CalculadoraTest" time="7.5"/>
-  </testsuite>
-</testrun>
