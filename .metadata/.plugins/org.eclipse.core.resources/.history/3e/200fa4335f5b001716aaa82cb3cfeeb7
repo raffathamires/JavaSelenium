@@ -1,0 +1,92 @@
+package br.com.tests;
+
+import static org.junit.Assert.*;
+
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized.Parameters;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.junit.runners.Parameterized;
+
+import br.com.dados.Produto;
+
+@RunWith(Parameterized.class)
+
+public class DTProduto {
+	private WebDriver driver;
+	WebElement campoBusca;
+	WebElement buscaBotao;
+	WebElement formBuscar;
+	String descricaoPesquisa, descricaoprodutoPesquisado;
+	
+	public DTProduto(String descricaoPesquisa, String descricaoprodutoPesquisado) {
+		this.descricaoPesquisa = descricaoPesquisa;
+		this.descricaoprodutoPesquisado = descricaoprodutoPesquisado;
+	}
+
+	@Before
+	public void setUp() throws Exception {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sala01\\Documents\\JavaSelenium\\CursoSeleniumJava\\Drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.get("https://m.extra.com.br/#/");
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		driver.quit();
+	}
+	
+	private void acionarVoltar() {
+		WebElement botaoVoltar = driver.findElement(By.cssSelector(".breadcrumb"));
+		botaoVoltar.click();
+	}
+	
+	private void mapearElementosBusca() {
+		campoBusca = driver.findElement(By.id("search-input"));
+		//buscaBotao = driver.findElement(By.xpath("div[1]/div/div/div/form/div/div/div[2]/button"));
+		formBuscar = driver.findElement(By.name("searchForm"));
+	}
+	
+	private void realizarBusca() throws InterruptedException{
+		mapearElementosBusca();
+		campoBusca.clear();
+		campoBusca.sendKeys((descricaoPesquisa));
+		Thread.sleep(3000);
+		formBuscar.submit();
+		//buscaBotao.click();
+	}
+	
+	
+	private boolean produtoPesquisadoNaLista(){
+		return driver.findElement(By.cssSelector(".lst.lst-bordered.prod-list-view")).getText().contains(descricaoprodutoPesquisado);
+	}
+	@Parameters
+	public static Collection<Object[]> data() {
+		return Arrays.asList(new Object[][]{
+			{"Perfume Extreme Ferrari", "UAHSUAHS Extreme Eau de Toilette Masculino - Ferrari"},
+			{"xbox one", "Xbox One - Console Xbox One 500GB + Kinect"},
+			{"cadeira de escritório","Cadeira de Escritório Giratória Marilyn"},
+			{"cama para cachorros","Cama para Cães, Cachorros e Gatos"}});
+	}
+
+
+	@Test
+	public void testRealizaBusca() throws InterruptedException {
+		//Produto prod = Produto.listaproduto();
+		realizarBusca();
+		Thread.sleep(3000);
+		assertTrue("Deveria ter retornado o produto da lista: ", produtoPesquisadoNaLista());
+		acionarVoltar();
+	}
+
+}

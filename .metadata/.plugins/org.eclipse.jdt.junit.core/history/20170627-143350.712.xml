@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="DTProduto.testRealizaBusca" project="DataDriven" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="br.com.tests.DTProduto" time="56.602">
+    <testsuite name="[0]" time="14.651">
+      <testcase name="testRealizaBusca[0]" classname="br.com.tests.DTProduto" time="14.651"/>
+    </testsuite>
+    <testsuite name="[1]" time="13.629">
+      <testcase name="testRealizaBusca[1]" classname="br.com.tests.DTProduto" time="13.629"/>
+    </testsuite>
+    <testsuite name="[2]" time="15.182">
+      <testcase name="testRealizaBusca[2]" classname="br.com.tests.DTProduto" time="15.182"/>
+    </testsuite>
+    <testsuite name="[3]" time="13.14">
+      <testcase name="testRealizaBusca[3]" classname="br.com.tests.DTProduto" time="13.14"/>
+    </testsuite>
+  </testsuite>
+</testrun>
