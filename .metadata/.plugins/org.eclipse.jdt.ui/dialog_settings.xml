@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="C:\Users\sala01\Documents\JavaSelenium\CursoSeleniumJava\Drivers\selenium-2.53.1\libs" key="org.eclipse.jdt.ui.lastextjar"/>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item value="false" key="renameSubpackages"/>
+		<item value="false" key="updateQualifiedNames"/>
+		<item value="*" key="patterns"/>
+		<item value="false" key="updateTextualMatches"/>
+	</section>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item value="2" key="layout"/>
 		<item value="true" key="group_libraries"/>
@@ -33,7 +39,7 @@
 		<item value="false" key="FinalModifier"/>
 	</section>
 	<section name="ClasspathContainerSelectionPage">
-		<item value="1" key="index"/>
+		<item value="3" key="index"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
