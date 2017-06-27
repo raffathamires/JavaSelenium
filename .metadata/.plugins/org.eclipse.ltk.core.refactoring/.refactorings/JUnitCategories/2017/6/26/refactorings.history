@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;br.com.suites.Positiveests.java&apos; to &apos;PositiveTests.java&apos;&#x0D;&#x0A;- Original project: &apos;JUnitCategories&apos;&#x0D;&#x0A;- Original element: &apos;br.com.suites.Positiveests.java&apos;&#x0D;&#x0A;- Renamed element: &apos;br.com.suites.PositiveTests.java&apos;" description="Rename compilation unit &apos;Positiveests.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;br.com.suites{Positiveests.java" name="PositiveTests.java" references="false" stamp="1498572567524" version="1.0"/>
+</session>

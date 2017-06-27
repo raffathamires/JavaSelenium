@@ -1,0 +1,71 @@
+package br.com.tests;
+
+import static org.junit.Assert.*;
+
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import br.com.dados.Produto;
+
+public class PesquisaProdutoTest {
+	private WebDriver driver;
+	WebElement campoBusca;
+	WebElement buscaBotao;
+	WebElement formBuscar;
+
+	@Before
+	public void setUp() throws Exception {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sala01\\Documents\\JavaSelenium\\CursoSeleniumJava\\Drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.get("https://m.extra.com.br/#/");
+	}
+
+
+	@After
+	public void tearDown() throws Exception {
+		driver.quit();
+	}
+	private void acionarVoltar() {
+		WebElement botaoVoltar = driver.findElement(By.cssSelector(".breadcrumb"));
+		botaoVoltar.click();
+	}
+	
+	private void mapearElementosBusca() {
+		campoBusca = driver.findElement(By.id("search-input"));
+		buscaBotao = driver.findElement(By.xpath("div[1]/div/div/div/form/div/div/div[2]/button"));
+		formBuscar = driver.findElement(By.name("searchForm"));
+	}
+	
+	private void realizarBusca(Produto produto) throws InterruptedException{
+		mapearElementosBusca();
+		campoBusca.clear();
+		campoBusca.sendKeys(produto.getDescricaoBusca());
+		Thread.sleep(3000);
+		formBuscar.submit();
+		//buscaBotao.click();
+	}
+	
+	private boolean produtoPesquisadoNaLista(Produto produto){
+		return driver.findElement(By.xpath("//ul[@class= 'lst lst-bordered prod-list-view']")).getText().contains(produto.getDescricaoProdutoEsperado());
+	}
+
+	@Test
+	public void testRealizaBusca() throws TimeoutException, InterruptedException {
+		for (Produto prod : Produto.listaproduto()){
+			realizarBusca(prod);
+			Thread.sleep(3000);
+			assertTrue("Deveria ter retornado o produto da lista: " + prod.getDescricaoProdutoEsperado(), produtoPesquisadoNaLista(prod));
+			acionarVoltar();
+		}
+	}
+
+}

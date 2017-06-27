@@ -1,0 +1,33 @@
+package br.com.dados;
+
+import java.util.ArrayList;
+
+public class Produto {
+	private String descricaoBusca;
+	private String descricaoProdutoEsperado;
+	
+	public Produto(String nomeBusca, String nomeProduto){
+		descricaoBusca = nomeBusca;
+		descricaoProdutoEsperado = nomeProduto;
+	}
+
+	public String getDescricaoBusca() {
+		return descricaoBusca;
+	}
+
+	public String getDescricaoProdutoEsperado() {
+		return descricaoProdutoEsperado;
+	}
+
+	public static ArrayList<Produto> listaproduto() {
+		ArrayList<Produto> lista = new ArrayList<Produto>();
+		
+		lista.add(new Produto("Perfume Extreme Ferrari", "Perfume Extreme Eau de Toilette Masculino - Ferrari"));
+		lista.add(new Produto("xbox one", "Xbox One - Console Xbox One 500GB + Kinect"));
+		lista.add(new Produto("cadeira de escritório","Cadeira de Escritório Giratória Marilyn"));
+		lista.add(new Produto("",""));
+		return lista;
+		
+	}
+
+}
