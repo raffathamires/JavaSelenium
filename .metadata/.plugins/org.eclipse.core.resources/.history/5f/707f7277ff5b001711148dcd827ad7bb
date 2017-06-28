@@ -1,0 +1,42 @@
+package br.com.test;
+
+import org.testng.annotations.Test;
+
+import br.com.page.LoginPage;
+import br.com.page.TimeLinePage;
+
+import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.DataProvider;
+
+public class LoginTest {
+	private WebDriver driver;
+	private LoginPage loginPage;
+	private TimeLinePage timeLinePage;
+	
+  @Test
+  public void testeRealizaLoginComSucesso() {
+	  loginPage = new LoginPage(driver);
+	  
+	  loginPage.abre();
+	  loginPage.logar("raffaela.monteiro@gmail.com", "lp121012doddy");
+  }
+  
+  @BeforeMethod
+  public void beforeMethod() {
+  }
+
+  @AfterMethod
+  public void afterMethod() {
+  }
+
+
+  @DataProvider
+  public Object[][] dp() {
+    return new Object[][] {
+      new Object[] { 1, "a" },
+      new Object[] { 2, "b" },
+    };
+  }
+}

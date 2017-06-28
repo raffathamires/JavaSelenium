@@ -1,0 +1,12 @@
+package br.com.page;
+
+import org.openqa.selenium.WebDriver;
+
+public class TimeLinePage {
+	private WebDriver driver;
+	
+	public TimeLinePage(WebDriver driver){
+		this.driver = driver;
+	}
+
+}

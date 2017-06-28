@@ -1,0 +1,24 @@
+package br.com.page;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class TimeLinePage {
+	private WebDriver driver;
+	private WebElement name;
+	
+	public TimeLinePage(WebDriver driver){
+		this.driver = driver;
+	}
+	
+	public void mapearTimeLine() {
+		name = driver.findElement(By.cssSelector(".linkWrap.noCount"));
+	}
+	
+	public String logadoSucesso() {
+		mapearTimeLine();
+		String result = name.getAttribute("value");
+		return result;
+	}
+}
